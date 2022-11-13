@@ -3,76 +3,108 @@
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
 
-:root{
+:root {
     /* Primary */
 
---soft-red: hsl(7, 99%, 70%);
---yellow: hsl(51, 100%, 49%);
---dark-desaturated-cyan: hsl(167, 40%, 24%);
---dark-blue: hsl(198, 62%, 26%);
---dark-moderate-cyan:hsl(168, 34%, 41%);
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
 
- /* Neutral */
+    /* Neutral */
 
---very-dark-desaturated-blue: hsl(212, 27%, 19%);
---very-dark-grayish-blue: hsl(213, 9%, 39%);
---dark-grayish-blue: hsl(232, 10%, 55%);
---grayish-blue: hsl(210, 4%, 67%);
---white: hsl(0, 0%, 100%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
-
 /* navbar */
-.navbar{
+.navbar {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar img{
+.navbar img {
     padding-left: 30px;
 }
-ul{
+
+ul {
     display: flex;
     align-items: center;
 }
-ul li{
+
+ul li {
     list-style: none;
     margin-right: 20px;
     font-family: 'Barlow', sans-serif;
     cursor: pointer;
 }
-ul li a{
-    color:var(--white);
+
+ul li a {
+    color: var(--white);
     font-size: 16px;
 }
-ul li a,button#contact-btn a{
+
+ul li a,
+button#contact-btn a {
     text-decoration: none;
 }
-button#contact-btn a{
+
+button#contact-btn a {
     color: var(--very-dark-grayish-blue);
     font-size: 16px;
     font-family: 'Barlow', sans-serif;
 }
-button{
+
+button {
     padding: 5px 12px;
     border-radius: 13px;
     border: none;
     transition: 0.2 all ease-in-out;
 }
-button:hover,button#contact-btn a:hover{
-    background:hsla(0, 0%, 100%,0.5);
+
+button:hover,
+button#contact-btn a:hover {
+    background: hsla(0, 0%, 100%, 0.5);
 }
-button#contact-btn a:hover{
-    color:var(--white) ;
+
+button#contact-btn a:hover {
+    color: var(--white);
     background: none;
 }
 
+.banner{
+    background-image: url("./images/desktop/image-header.jpg");
+    height: 80vh;
+    min-height: 600px;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.main-heading{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+.heading img{
+    padding-top: 50px;
+}
