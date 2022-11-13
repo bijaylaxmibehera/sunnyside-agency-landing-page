@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+:root{
+    /* Primary */
+
+--soft-red: hsl(7, 99%, 70%);
+--yellow: hsl(51, 100%, 49%);
+--dark-desaturated-cyan: hsl(167, 40%, 24%);
+--dark-blue: hsl(198, 62%, 26%);
+--dark-moderate-cyan:hsl(168, 34%, 41%);
+
+ /* Neutral */
+
+--very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--very-dark-grayish-blue: hsl(213, 9%, 39%);
+--dark-grayish-blue: hsl(232, 10%, 55%);
+--grayish-blue: hsl(210, 4%, 67%);
+--white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    padding-left: 30px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+}
+ul li a{
+    color:var(--white);
+    font-size: 16px;
+}
+ul li a,button#contact-btn a{
+    text-decoration: none;
+}
+button#contact-btn a{
+    color: rgb(12, 12, 117);
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+}
+button{
+    padding: 5px 12px;
+    border-radius: 13px;
+    border: none;
+    transition: 0.2 all ease-in-out;
+}
+button:hover,button#contact-btn a:hover{
+    background:hsla(0, 0%, 100%,0.5);
+}
+button#contact-btn a:hover{
+    color:var(--white) ;
+    background: none;
+}
